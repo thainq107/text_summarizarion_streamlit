@@ -6,7 +6,7 @@ from transformers import AutoTokenizer, AutoModelWithLMHead
 @st.cache_resource
 def load_model(gdrive_id='10tqLKISuWkjBI-iw-krjA7vM-_OyTG6x'):
 
-  model_path = 't5-base-summarize'
+  model_path = 't5-base-summarize-news'
   if not os.path.exists(model_path):
     # download folder
     gdown.download_folder(id=gdrive_id)
